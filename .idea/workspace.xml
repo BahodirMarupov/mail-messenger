@@ -4,16 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85efcc1b-7136-40ec-a1b8-3cd3ff542f71" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/jmp/workshop/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/jmp/workshop/service/IFileService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/jmp/workshop/service/IMessenger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/jmp/workshop/service/ITemplateService.java" afterDir="false" />
+    <list default="true" id="85efcc1b-7136-40ec-a1b8-3cd3ff542f71" name="Changes" comment="initial commit">
+      <change afterPath="$PROJECT_DIR$/src/main/java/jmp/workshop/service/ConsoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jmp/workshop/service/FileService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jmp/workshop/service/MessengerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jmp/workshop/service/TemplateService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/jmp/workshop/service/ConsoleServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jmp/workshop/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jmp/workshop/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +23,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -36,22 +37,33 @@
   <component name="ProjectId" id="2CCdoBWx5SabEHYBnvUry9LMM72" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit4",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4": "",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
-}</component>
-  <component name="RunManager">
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="jmp.workshop.service" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.ConsoleServiceTest (3)">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="jmp.workshop.Main" />
       <module name="mail-messenger" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="jmp.workshop.service.*" />
+          <option name="PATTERN" value="jmp.workshop.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -59,9 +71,75 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ConsoleServiceTest (3)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mail-messenger" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="jmp.workshop.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="jmp.workshop.service" />
+      <option name="MAIN_CLASS_NAME" value="jmp.workshop.service.ConsoleServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConsoleServiceTest (4)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mail-messenger" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="jmp.workshop.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="jmp.workshop.service" />
+      <option name="MAIN_CLASS_NAME" value="jmp.workshop.service.ConsoleServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConsoleServiceTest.readPlaceholders" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mail-messenger" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="jmp.workshop.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="jmp.workshop.service" />
+      <option name="MAIN_CLASS_NAME" value="jmp.workshop.service.ConsoleServiceTest" />
+      <option name="METHOD_NAME" value="readPlaceholders" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConsoleServiceTest.readTemplate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mail-messenger" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="jmp.workshop.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="jmp.workshop.service" />
+      <option name="MAIN_CLASS_NAME" value="jmp.workshop.service.ConsoleServiceTest" />
+      <option name="METHOD_NAME" value="readTemplate" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.jmp.workshop.Main" />
+        <item itemvalue="JUnit.ConsoleServiceTest (3)" />
+        <item itemvalue="JUnit.ConsoleServiceTest.readPlaceholders" />
+        <item itemvalue="JUnit.ConsoleServiceTest.readTemplate" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.ConsoleServiceTest (4)" />
       </list>
     </recent_temporary>
   </component>
@@ -74,6 +152,14 @@
       <option name="presentableId" value="Default" />
       <updated>1658310676087</updated>
     </task>
+    <task id="LOCAL-00001" summary="initial commit">
+      <created>1658489959849</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1658489959849</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -86,5 +172,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
   </component>
 </project>
