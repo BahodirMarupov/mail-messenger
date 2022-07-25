@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85efcc1b-7136-40ec-a1b8-3cd3ff542f71" name="Changes" comment="TemplateService methods written">
-      <change afterPath="$PROJECT_DIR$/src/main/java/jmp/workshop/service/MessengerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/jmp/workshop/service/MessengerServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="85efcc1b-7136-40ec-a1b8-3cd3ff542f71" name="Changes" comment="failed tests written for MessengerService">
       <change beforePath="$PROJECT_DIR$/src/main/java/jmp/workshop/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jmp/workshop/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jmp/workshop/service/MessengerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jmp/workshop/service/MessengerService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +51,7 @@
       <recent name="jmp.workshop.service" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MessengerServiceTest.start_DynamicTests">
+  <component name="RunManager" selected="JUnit.MessengerServiceTest">
     <configuration name="MessengerServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mail-messenger" />
       <extension name="coverage">
@@ -136,9 +133,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MessengerServiceTest" />
         <item itemvalue="JUnit.MessengerServiceTest.start_DynamicTests" />
         <item itemvalue="JUnit.MessengerServiceTest.start_VariousInvalidParams_ShouldThrowException" />
-        <item itemvalue="JUnit.MessengerServiceTest" />
         <item itemvalue="JUnit.MessengerServiceTest.start_WithTwoPaths_ShouldWorkWithFile" />
         <item itemvalue="JUnit.MessengerServiceTest.start_WithTwoPaths_ShouldWorkWithWithFile" />
       </list>
@@ -202,7 +199,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658751455936</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="failed tests written for MessengerService">
+      <created>1658759143518</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1658759143518</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -224,6 +228,7 @@
     <MESSAGE value="FileService methods written" />
     <MESSAGE value="failed test cases written for TemplateService" />
     <MESSAGE value="TemplateService methods written" />
-    <option name="LAST_COMMIT_MESSAGE" value="TemplateService methods written" />
+    <MESSAGE value="failed tests written for MessengerService" />
+    <option name="LAST_COMMIT_MESSAGE" value="failed tests written for MessengerService" />
   </component>
 </project>
