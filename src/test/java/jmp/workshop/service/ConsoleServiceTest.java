@@ -21,7 +21,7 @@ public class ConsoleServiceTest {
     private ConsoleService consoleService = new ConsoleService();
 
     @Test
-    public void readTemplate() {
+    public void shouldReadTemplate() {
         System.setIn(new ByteArrayInputStream(TEMPLATE.getBytes()));
 
         String actual = consoleService.readTemplate();
@@ -30,7 +30,7 @@ public class ConsoleServiceTest {
     }
 
     @Test
-    public void readPlaceholders() {
+    public void shouldReadPlaceholders() {
         Map<String, String> expectedPlaceholder = Map.of(
             "name", "Liam",
             "link", "https://www.test.com/",
