@@ -5,6 +5,7 @@ import jmp.workshop.exception.PlaceholderNotFoundException;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.util.HashMap;
 import java.util.Map;
 
 /**
@@ -23,11 +24,11 @@ class TemplateServiceTest {
 
     @BeforeEach
     public void setUp() {
-        placeholders = Map.of(
-            "name", "Liam",
-            "link", "https://www.test.com/",
-            "deadline", "12.05.2022",
-            "team", "Support");
+        placeholders = new HashMap<>();
+        placeholders.put("name", "Liam");
+        placeholders.put("link", "https://www.test.com/");
+        placeholders.put("deadline", "12.05.2022");
+        placeholders.put("team", "Support");
     }
 
     @Test

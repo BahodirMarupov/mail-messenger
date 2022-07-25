@@ -4,14 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85efcc1b-7136-40ec-a1b8-3cd3ff542f71" name="Changes" comment="FileService methods written">
+    <list default="true" id="85efcc1b-7136-40ec-a1b8-3cd3ff542f71" name="Changes" comment="failed test cases written for TemplateService">
       <change afterPath="$PROJECT_DIR$/src/main/java/jmp/workshop/service/MessengerService.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/jmp/workshop/service/TemplateService.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/jmp/workshop/service/MessengerServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/jmp/workshop/service/TemplateServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/jmp/workshop/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jmp/workshop/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/jmp/workshop/service/FileServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/jmp/workshop/service/FileServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,9 +19,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit4 Test Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -56,18 +54,16 @@
       <recent name="jmp.workshop.service" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TemplateServiceTest.shouldPrepareMessage_PlaceholdersMoreThenRequired">
-    <configuration name="ConsoleServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.TemplateServiceTest">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="jmp.workshop.Main" />
       <module name="mail-messenger" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="jmp.workshop.service.*" />
+          <option name="PATTERN" value="jmp.workshop.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="jmp.workshop.service" />
-      <option name="MAIN_CLASS_NAME" value="jmp.workshop.service.ConsoleServiceTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -87,7 +83,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FileServiceTest.readTemplate_InvalidPath_ShouldThrowException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TemplateServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mail-messenger" />
       <extension name="coverage">
         <pattern>
@@ -96,14 +92,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="jmp.workshop.service" />
-      <option name="MAIN_CLASS_NAME" value="jmp.workshop.service.FileServiceTest" />
-      <option name="METHOD_NAME" value="readTemplate_InvalidPath_ShouldThrowException" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="jmp.workshop.service.TemplateServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FileServiceTest.writeMessage_InvalidPath_ShouldThrowException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TemplateServiceTest.shouldPrepareMessage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mail-messenger" />
       <extension name="coverage">
         <pattern>
@@ -112,8 +107,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="jmp.workshop.service" />
-      <option name="MAIN_CLASS_NAME" value="jmp.workshop.service.FileServiceTest" />
-      <option name="METHOD_NAME" value="writeMessage_InvalidPath_ShouldThrowException" />
+      <option name="MAIN_CLASS_NAME" value="jmp.workshop.service.TemplateServiceTest" />
+      <option name="METHOD_NAME" value="shouldPrepareMessage" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -137,11 +132,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TemplateServiceTest" />
         <item itemvalue="JUnit.TemplateServiceTest.shouldPrepareMessage_PlaceholdersMoreThenRequired" />
+        <item itemvalue="JUnit.TemplateServiceTest.shouldPrepareMessage" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.FileServiceTest" />
-        <item itemvalue="JUnit.ConsoleServiceTest" />
-        <item itemvalue="JUnit.FileServiceTest.writeMessage_InvalidPath_ShouldThrowException" />
-        <item itemvalue="JUnit.FileServiceTest.readTemplate_InvalidPath_ShouldThrowException" />
       </list>
     </recent_temporary>
   </component>
@@ -189,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658744116380</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="failed test cases written for TemplateService">
+      <created>1658746573060</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1658746573060</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -209,6 +211,7 @@
     <MESSAGE value="ConsoleService methods written" />
     <MESSAGE value="failed test cases for FileService" />
     <MESSAGE value="FileService methods written" />
-    <option name="LAST_COMMIT_MESSAGE" value="FileService methods written" />
+    <MESSAGE value="failed test cases written for TemplateService" />
+    <option name="LAST_COMMIT_MESSAGE" value="failed test cases written for TemplateService" />
   </component>
 </project>
