@@ -4,14 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85efcc1b-7136-40ec-a1b8-3cd3ff542f71" name="Changes" comment="ConsoleService methods written">
-      <change afterPath="$PROJECT_DIR$/src/main/java/jmp/workshop/service/FileService.java" afterDir="false" />
+    <list default="true" id="85efcc1b-7136-40ec-a1b8-3cd3ff542f71" name="Changes" comment="FileService methods written">
       <change afterPath="$PROJECT_DIR$/src/main/java/jmp/workshop/service/MessengerService.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/jmp/workshop/service/TemplateService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/jmp/workshop/service/FileServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/jmp/workshop/service/MessengerServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/jmp/workshop/service/TemplateServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/jmp/workshop/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jmp/workshop/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/jmp/workshop/service/ConsoleServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/jmp/workshop/service/ConsoleServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/jmp/workshop/service/FileServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/jmp/workshop/service/FileServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +56,22 @@
       <recent name="jmp.workshop.service" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.FileServiceTest">
+  <component name="RunManager" selected="JUnit.TemplateServiceTest.shouldPrepareMessage_PlaceholdersMoreThenRequired">
+    <configuration name="ConsoleServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mail-messenger" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="jmp.workshop.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="jmp.workshop.service" />
+      <option name="MAIN_CLASS_NAME" value="jmp.workshop.service.ConsoleServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="FileServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mail-messenger" />
       <extension name="coverage">
@@ -88,38 +103,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FileServiceTest.shouldReadTemplate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mail-messenger" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="jmp.workshop.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="jmp.workshop.service" />
-      <option name="MAIN_CLASS_NAME" value="jmp.workshop.service.FileServiceTest" />
-      <option name="METHOD_NAME" value="shouldReadTemplate" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FileServiceTest.shouldWriteMessage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mail-messenger" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="jmp.workshop.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="jmp.workshop.service" />
-      <option name="MAIN_CLASS_NAME" value="jmp.workshop.service.FileServiceTest" />
-      <option name="METHOD_NAME" value="shouldWriteMessage" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="FileServiceTest.writeMessage_InvalidPath_ShouldThrowException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mail-messenger" />
       <extension name="coverage">
@@ -136,13 +119,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TemplateServiceTest.shouldPrepareMessage_PlaceholdersMoreThenRequired" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mail-messenger" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="jmp.workshop.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="jmp.workshop.service" />
+      <option name="MAIN_CLASS_NAME" value="jmp.workshop.service.TemplateServiceTest" />
+      <option name="METHOD_NAME" value="shouldPrepareMessage_PlaceholdersMoreThenRequired" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TemplateServiceTest.shouldPrepareMessage_PlaceholdersMoreThenRequired" />
         <item itemvalue="JUnit.FileServiceTest" />
+        <item itemvalue="JUnit.ConsoleServiceTest" />
         <item itemvalue="JUnit.FileServiceTest.writeMessage_InvalidPath_ShouldThrowException" />
         <item itemvalue="JUnit.FileServiceTest.readTemplate_InvalidPath_ShouldThrowException" />
-        <item itemvalue="JUnit.FileServiceTest.shouldWriteMessage" />
-        <item itemvalue="JUnit.FileServiceTest.shouldReadTemplate" />
       </list>
     </recent_temporary>
   </component>
@@ -176,7 +175,21 @@
       <option name="project" value="LOCAL" />
       <updated>1658696171217</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="failed test cases for FileService">
+      <created>1658744053101</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1658744053101</updated>
+    </task>
+    <task id="LOCAL-00005" summary="FileService methods written">
+      <created>1658744116380</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1658744116380</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -194,6 +207,8 @@
     <MESSAGE value="initial commit" />
     <MESSAGE value="failed test cases written for ConsoleService" />
     <MESSAGE value="ConsoleService methods written" />
-    <option name="LAST_COMMIT_MESSAGE" value="ConsoleService methods written" />
+    <MESSAGE value="failed test cases for FileService" />
+    <MESSAGE value="FileService methods written" />
+    <option name="LAST_COMMIT_MESSAGE" value="FileService methods written" />
   </component>
 </project>

@@ -15,8 +15,8 @@ import java.nio.file.Path;
  */
 class FileServiceTest {
 
-    public Path inputFilePath;
-    public Path outputFilePath;
+    private Path inputFilePath;
+    private Path outputFilePath;
 
     private final static String TEMPLATE = "Hello #{name}, please check following link out: #{link}. " +
         "The deadline is #{deadline} EOD. Sincerely, #{team} team";
@@ -24,7 +24,7 @@ class FileServiceTest {
     private final static String MESSAGE = "test_message";
 
     @TempDir
-    Path tempDir;
+    private Path tempDir;
 
     public final FileService fileService = new FileService();
 
