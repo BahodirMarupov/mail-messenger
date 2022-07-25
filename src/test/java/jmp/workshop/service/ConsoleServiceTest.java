@@ -3,6 +3,7 @@ package jmp.workshop.service;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import java.io.ByteArrayInputStream;
@@ -21,6 +22,7 @@ public class ConsoleServiceTest {
     private ConsoleService consoleService = new ConsoleService();
 
     @Test
+    @Tag("withConsole")
     public void shouldReadTemplate() {
         System.setIn(new ByteArrayInputStream(TEMPLATE.getBytes()));
 
@@ -30,6 +32,7 @@ public class ConsoleServiceTest {
     }
 
     @Test
+    @Tag("withConsole")
     public void shouldReadPlaceholders() {
         Map<String, String> expectedPlaceholder = Map.of(
             "name", "Liam",

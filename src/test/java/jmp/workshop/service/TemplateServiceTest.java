@@ -3,6 +3,7 @@ package jmp.workshop.service;
 import static org.junit.jupiter.api.Assertions.*;
 import jmp.workshop.exception.PlaceholderNotFoundException;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import java.util.HashMap;
@@ -32,6 +33,7 @@ class TemplateServiceTest {
     }
 
     @Test
+    @Tag("withFile")
     public void shouldPrepareMessage() {
         String actualMessage = templateService.prepareMessage(TEMPLATE, placeholders);
 
@@ -39,6 +41,7 @@ class TemplateServiceTest {
     }
 
     @Test
+    @Tag("withFile")
     public void shouldPrepareMessage_PlaceholdersMoreThenRequired() {
         placeholders.put("phone", "+998992223334");
         String actualMessage = templateService.prepareMessage(TEMPLATE, placeholders);
@@ -47,6 +50,7 @@ class TemplateServiceTest {
     }
 
     @Test
+    @Tag("withFile")
     public void prepareMessage_NamePlaceholderNotProvided_ShouldThrowException() {
         placeholders.remove("name");
         Exception exception = assertThrows(PlaceholderNotFoundException.class,
