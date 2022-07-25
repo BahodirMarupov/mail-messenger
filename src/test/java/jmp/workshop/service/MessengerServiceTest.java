@@ -7,6 +7,8 @@ import static org.mockito.Mockito.when;
 import org.junit.jupiter.api.DynamicTest;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestFactory;
+import org.junit.jupiter.api.condition.EnabledForJreRange;
+import org.junit.jupiter.api.condition.JRE;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -82,6 +84,7 @@ class MessengerServiceTest {
 
     @ParameterizedTest
     @MethodSource
+    @EnabledForJreRange(min = JRE.JAVA_8, max = JRE.JAVA_13)
     public void start_VariousInvalidParams_ShouldThrowException(String[] paths) {
         Exception exception = assertThrows(IllegalArgumentException.class, () -> messengerService.start(null));
 
@@ -98,6 +101,7 @@ class MessengerServiceTest {
     }
 
     @TestFactory
+    @EnabledForJreRange(min = JRE.JAVA_8, max = JRE.JAVA_13)
     public Collection<DynamicTest> start_DynamicTests() {
         return Arrays.asList(
             DynamicTest.dynamicTest("with 3 arguments", () -> {
