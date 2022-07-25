@@ -60,6 +60,16 @@ class MessengerServiceTest {
     }
 
     @Test
+    public void start_withPartialMocking_EmptyParamsGiven_ShouldWorkWithConsole() {
+        when(consoleService.readTemplate()).thenReturn(TEMPLATE);
+        when(consoleService.readPlaceholders()).thenReturn(PLACEHOLDERS);
+        when(templateService.prepareMessage(eq(TEMPLATE), eq(PLACEHOLDERS)))
+            .thenCallRealMethod();
+
+        messengerService.start(new String[]{});
+    }
+
+    @Test
     public void start_TwoPathsGiven_ShouldWorkWithFile() {
         when(fileService.readTemplate(eq(INPUT_FILE_PATH))).thenReturn(TEMPLATE);
         when(consoleService.readPlaceholders()).thenReturn(PLACEHOLDERS);

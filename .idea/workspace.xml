@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85efcc1b-7136-40ec-a1b8-3cd3ff542f71" name="Changes" comment="failed tests written for MessengerService">
+    <list default="true" id="85efcc1b-7136-40ec-a1b8-3cd3ff542f71" name="Changes" comment="MessengerService methods written">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/jmp/workshop/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jmp/workshop/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jmp/workshop/service/MessengerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jmp/workshop/service/MessengerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/jmp/workshop/service/MessengerServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/jmp/workshop/service/MessengerServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +84,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MessengerServiceTest.start_VariousInvalidParams_ShouldThrowException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MessengerServiceTest.start_withPartialMockingAndSpy_TwoPathsGiven_ShouldWorkWithFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mail-messenger" />
       <extension name="coverage">
         <pattern>
@@ -93,13 +94,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="jmp.workshop.service" />
       <option name="MAIN_CLASS_NAME" value="jmp.workshop.service.MessengerServiceTest" />
-      <option name="METHOD_NAME" value="start_VariousInvalidParams_ShouldThrowException([Ljava.lang.String;)" />
+      <option name="METHOD_NAME" value="start_withPartialMockingAndSpy_TwoPathsGiven_ShouldWorkWithFile" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MessengerServiceTest.start_WithTwoPaths_ShouldWorkWithFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MessengerServiceTest.start_withPartialMocking_EmptyParamsGiven_ShouldWorkWithConsole" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mail-messenger" />
       <extension name="coverage">
         <pattern>
@@ -109,13 +110,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="jmp.workshop.service" />
       <option name="MAIN_CLASS_NAME" value="jmp.workshop.service.MessengerServiceTest" />
-      <option name="METHOD_NAME" value="start_WithTwoPaths_ShouldWorkWithFile" />
+      <option name="METHOD_NAME" value="start_withPartialMocking_EmptyParamsGiven_ShouldWorkWithConsole" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MessengerServiceTest.start_WithTwoPaths_ShouldWorkWithWithFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MessengerServiceTest.start_withSpy_EmptyParamsGiven_ShouldWorkWithConsole" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mail-messenger" />
       <extension name="coverage">
         <pattern>
@@ -125,7 +126,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="jmp.workshop.service" />
       <option name="MAIN_CLASS_NAME" value="jmp.workshop.service.MessengerServiceTest" />
-      <option name="METHOD_NAME" value="start_WithTwoPaths_ShouldWorkWithWithFile" />
+      <option name="METHOD_NAME" value="start_withSpy_EmptyParamsGiven_ShouldWorkWithConsole" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -134,10 +135,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.MessengerServiceTest" />
+        <item itemvalue="JUnit.MessengerServiceTest.start_withPartialMockingAndSpy_TwoPathsGiven_ShouldWorkWithFile" />
+        <item itemvalue="JUnit.MessengerServiceTest.start_withPartialMocking_EmptyParamsGiven_ShouldWorkWithConsole" />
+        <item itemvalue="JUnit.MessengerServiceTest.start_withSpy_EmptyParamsGiven_ShouldWorkWithConsole" />
         <item itemvalue="JUnit.MessengerServiceTest.start_DynamicTests" />
-        <item itemvalue="JUnit.MessengerServiceTest.start_VariousInvalidParams_ShouldThrowException" />
-        <item itemvalue="JUnit.MessengerServiceTest.start_WithTwoPaths_ShouldWorkWithFile" />
-        <item itemvalue="JUnit.MessengerServiceTest.start_WithTwoPaths_ShouldWorkWithWithFile" />
       </list>
     </recent_temporary>
   </component>
@@ -206,7 +207,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658759143518</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="MessengerService methods written">
+      <created>1658759198754</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1658759198754</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -229,6 +237,23 @@
     <MESSAGE value="failed test cases written for TemplateService" />
     <MESSAGE value="TemplateService methods written" />
     <MESSAGE value="failed tests written for MessengerService" />
-    <option name="LAST_COMMIT_MESSAGE" value="failed tests written for MessengerService" />
+    <MESSAGE value="MessengerService methods written" />
+    <option name="LAST_COMMIT_MESSAGE" value="MessengerService methods written" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/jmp/workshop/service/MessengerServiceTest.java</url>
+          <line>91</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/jmp/workshop/service/MessengerService.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
